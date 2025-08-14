@@ -1,0 +1,71 @@
+# Dépendances
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Variables d'environnement
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Fichiers temporaires
+tmp/
+temp/
+*.tmp
+
+# Coverage et tests
+coverage/
+.nyc_output/
+test-results/
+
+# Build
+dist/
+build/
+
+# Base de données
+*.sqlite
+*.db
+
+# Fichiers de backup
+*.bak
+*.backup
+
+# Fichiers de cache
+.cache/
+.parcel-cache/
+
+# Fichiers de lock spécifiques
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Fichiers de configuration sensibles
+config/local.js
+config/production.js
+
+# Fichiers de logs spécifiques
+error.log
+access.log
+combined.log
+
+# Fichiers de monitoring
+.pm2/
