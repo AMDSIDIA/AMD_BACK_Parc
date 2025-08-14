@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: amd-parc-backend
+    env: docker
+    region: oregon
+    plan: free
+    buildCommand: echo "Build handled by Dockerfile"
+    startCommand: echo "Start handled by Dockerfile"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: CORS_ORIGIN
+        value: https://amd-parc.onrender.com
+    healthCheckPath: /api/health
+    autoDeploy: true

@@ -52,7 +52,6 @@ temp/
 .editorconfig
 
 # Fichiers de déploiement spécifiques
-render.yaml
 vercel.json
 netlify.toml
 
@@ -64,8 +63,7 @@ netlify.toml
 .cache/
 .parcel-cache/
 
-# Fichiers de lock spécifiques
-package-lock.json
+# Fichiers de lock spécifiques (garder package-lock.json pour npm ci)
 yarn.lock
 pnpm-lock.yaml
 
